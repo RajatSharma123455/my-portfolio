@@ -50,7 +50,7 @@ export default function Hero() {
               <span className="animate-pulse">|</span>
             </div>
 
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+            <p className="text-lg text-gray-300 dark:text-gray-300 mb-8">
               Turning ideas into reality through elegant and efficient code.
             </p>
 

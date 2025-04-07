@@ -1,44 +1,39 @@
+import  Mail from "../assets/icons8-gmail.svg";
+import  Github from "../assets/icons8-github.svg";
+import  Linkedin from "../assets/icons8-linkedin.svg";
+
 export default function Contact() {
   return (
     <section id="contact" className="py-20">
-      <div className="container mx-auto px-4">
-        <h2 className="section-title text-center transform transition-all duration-500 hover:scale-105">
-          Contact Me
+      <div className="container mx-auto px-4 text-center">
+        <h2 className="section-title transform transition-all duration-500 hover:scale-105">
+          Connect with Me
         </h2>
-        
-        <div className="max-w-lg mx-auto">
-          <form className="space-y-6">
-            <div className="group">
-              <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
-              <input
-                type="text"
-                id="name"
-                className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 hover:shadow-md"
-              />
-            </div>
-            <div className="group">
-              <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
-              <input
-                type="email"
-                id="email"
-                className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 hover:shadow-md"
-              />
-            </div>
-            <div className="group">
-              <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
-              <textarea
-                id="message"
-                rows="4"
-                className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 hover:shadow-md"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="btn-primary w-full transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
-            >
-              Send Message
-            </button>
-          </form>
+
+        <div className="flex justify-center gap-6 mt-6">
+          {/* Gmail */}
+          <a 
+      href="mailto:rajatbakshi933@gmail.com" 
+      className="p-3 rounded-full bg-gray-200 hover:bg-gray-300 transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center w-12 h-12"
+    >
+      <img 
+        src={Mail} // Replace with your Icons8 email icon URL
+        alt="Email Icon"
+        className="w-8 h-8"
+      />
+    </a>
+
+          {/* GitHub */}
+          <a href="https://github.com/RajatSharma123455" target="_blank" rel="noopener noreferrer"
+             className="p-3 rounded-full bg-gray-200 hover:bg-gray-300 transition-all duration-300 shadow-md hover:shadow-lg">
+           <img src={Github} className="" />
+          </a>
+
+          {/* LinkedIn */}
+          <a href="https://www.linkedin.com/in/rajatsharma-stack/" target="_blank" rel="noopener noreferrer"
+             className="p-3 rounded-full bg-gray-200 hover:bg-gray-300 transition-all duration-300 shadow-md hover:shadow-lg">
+          <img src={Linkedin} className="" />
+          </a>
         </div>
       </div>
     </section>
